@@ -418,6 +418,7 @@ body {
     align-items: center;
     height: auto;
     max-width: 1700px;
+    width: auto;
   }
   
   .text-blk.title {
@@ -694,6 +695,7 @@ body {
       align-items: center;
       height: 500px;
       gap: 20px;
+      padding-top: 50px;
     }
 
     .first_container div{
@@ -701,13 +703,13 @@ body {
     }
 
     .first_container img{
-      height: 200px;
-      width: 200px
+      height: 300px;
+      width: 300px
     }
 
     .image_slider{
-      width: 200px;
-      height: 200px;
+      width: 300px;
+      height: 300px;
     }
 
     .scrolldown_msg img{
@@ -749,19 +751,20 @@ body {
     }
 
     .swiper.srv{
-      width: 306px;
+      box-shadow: inset -10px 0px 10px 0px rgba(0,0,0,0.13), inset 10px 0px 10px 0px rgba(0,0,0,0.13);
+      width: 360px;
+      height: auto;
     }
 
     .swiper-slide.srv{
-      height: 300px;
-      margin-right: 0;
+      height: 400px;
       box-shadow: none;
-      max-width: 300px;
+      max-width: 354px;
     }
 
     .swiper-slide.srv p{
-      font-size: 10px;
-      padding: 0 60px;
+      font-size: 12px;
+      padding: 0 70px;
 
     }
 

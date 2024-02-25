@@ -20,7 +20,8 @@ var swiper = new Swiper(".mySwiperSrv", {
 
     501: {
       slidesPerView: 1,
-      autoplay: false
+      spaceBetween: 20,
+
     },
 
     769: {
