@@ -6,10 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tania Fernandes</title>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="/css/style.css">
 
-    <script defer src="..\script\img_swiper.js"></script>
+    <script defer src="..\script\scroll_reveal.js"></script>
+    <script defer src="..\script\img_fading.js"></script>
+    <script defer src="..\script\swiper.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -18,6 +22,10 @@
 
     <div class="header">
         <img src="..\src\tania_Prancheta 1 cópia 14 (horizontal).png" alt="logotipo Tania Fernandes">
+        <div>
+            <a href="https://www.linkedin.com/in/taniafernandespaes/"><img class="header_icon" src="src/linkedin (white).png" alt="Icone Linkedin"></a>
+            <a href="https://www.instagram.com/tania.fpaes/"><img class="header_icon" src="src/instagram.png" alt="Icone Instagram"></a>
+    </div>
     </div>
 
     <div class="first_container">
@@ -31,15 +39,20 @@
             </a> -->
         </div>
 
-        <section class="image-slider">
+        <section class="image_slider">
             <img class="img_bg active" src="..\src\tania1 (quadrado).jpg" alt="imagem 1 - Tania">
             <img class="img_bg" src="..\src\tania2 (quadrado).jpg" alt="imagem 1 - Tania">
             <img class="img_bg" src="..\src\tania3 (quadrado).jpg" alt="imagem 1 - Tania">
         </section>
     </div>
 
+    <div class="scrolldown_msg">
+        <img src="src/seta.png" alt="">
+        <p>ROLE PARA<br>BAIXO</p>
+    </div>
+
     <div class="second_container">
-        <div>
+        <div class="teste">
             <h1>Ola 👋, <br> Sou Tania, <br> Especialista em desenvolvimento pessoal</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor felis id arcu tincidunt,
                 lobortis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor felis id arcu tincidunt,
@@ -48,40 +61,258 @@
                 lobortis.</p>
             <div>
                 <ul>
-                    <li>Formação 1</li>
-                    <li>Formação 2</li>
-                    <li>Curso 1</li>
+                    <li>Gestão de Pessoas</li>
+                    <li>Direito Trabalhista</li>
+                    <li>Legislação Previdenciaria</li>
                 </ul>
                 <ul>
-                    <li>Formação 1</li>
-                    <li>Formação 2</li>
-                    <li>Curso 1</li>
+                    <li>MBA Master Coach</li>
+                    <li>Coaching p/ Executivo e Negócios</li>
+                    <li>Leader Coach</li>
                 </ul>
                 <ul>
-                    <li>Formação 1</li>
-                    <li>Formação 2</li>
-                    <li>Curso 1</li>
+                    <li>Desenvolvimento Organizacional</li>
+                    <li>Consultor Johunter</li>
+                    <li>Desenvolvimento de Carreira</li>
                 </ul>
             </div>
-            <a href="https://api.whatsapp.com/send?phone=5511989271590">
+            <a href="https://www.linkedin.com/in/taniafernandespaes/">
                 <p>Acesse meu linkedin</p>
-                <img src="..\src\linkedin.png" alt="">
-            </a> 
+                <img src="..\src\linkedin.png" alt="Simbolo Linkedin">
+            </a>
         </div>
-        <img src="src/tania3 (2x3).jpg" alt="">
-        <!-- <ul>
-            <li>Formação 1</li>
-            <li>Formação 2</li>
-            <li>Curso 1</li>
-            <li>Curso 2</li>
-            <li>Extensivo</li>
-        </ul>
-        <img src="src/tania2.jpg" alt=""> -->
+        <img class="tania_img" src="src/tania3 (2x3).jpg" alt="Foto Tania">
+    </div>
 
-
+    <div class="third_container">
+        <p class="text-blk title srv">
+            Serviços
+          </p>
+        <div class="swiper srv mySwiperSrv">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide srv">
+                    <p class="text-blk quotes srv">
+                        &
+                      </p>
+                    <img src="src/homem-de-negocios.png" alt="Imagem pensando">
+                    <h1> Coach Executivo</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor felis id arcu tincidunt,
+                        lobortis.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor felis id arcu tincidunt,
+                        lobortis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor felis id arcu
+                        tincidunt, lobortis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor felis
+                        id arcu tincidunt, lobortis.
+                    </p>
+                </div>
+                <div class="swiper-slide srv">
+                    <p class="text-blk quotes srv">
+                        %
+                      </p>
+                    <img src="src/homem-de-negocios.png" alt="Imagem pensando">
+                    <h1> Coach Executivo</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor felis id arcu tincidunt,
+                        lobortis.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor felis id arcu tincidunt,
+                        lobortis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor felis id arcu
+                        tincidunt, lobortis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor felis
+                        id arcu tincidunt, lobortis.
+                    </p>
+                </div>
+                <div class="swiper-slide srv">
+                    <p class="text-blk quotes srv">
+                        ©
+                      </p>
+                    <img src="src/homem-de-negocios.png" alt="Imagem pensando">
+                    <h1> Coach Executivo</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor felis id arcu tincidunt,
+                        lobortis.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor felis id arcu tincidunt,
+                        lobortis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor felis id arcu
+                        tincidunt, lobortis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor felis
+                        id arcu tincidunt, lobortis.
+                    </p>
+                </div>
+                <div class="swiper-slide srv">
+                    <p class="text-blk quotes srv">
+                        ®
+                      </p>
+                    <img src="src/homem-de-negocios.png" alt="Imagem pensando">
+                    <h1> Coach Executivo</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor felis id arcu tincidunt,
+                        lobortis.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor felis id arcu tincidunt,
+                        lobortis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor felis id arcu
+                        tincidunt, lobortis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor felis
+                        id arcu tincidunt, lobortis.
+                    </p>
+                </div>
+                <div class="swiper-slide srv">
+                    <p class="text-blk quotes srv">
+                        $
+                      </p>
+                    <img src="src/homem-de-negocios.png" alt="Imagem pensando">
+                    <h1> Coach Executivo</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor felis id arcu tincidunt,
+                        lobortis.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor felis id arcu tincidunt,
+                        lobortis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor felis id arcu
+                        tincidunt, lobortis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor felis
+                        id arcu tincidunt, lobortis.
+                    </p>
+                </div>
+                <div class="swiper-slide srv">
+                    <p class="text-blk quotes srv">
+                        < >
+                      </p>
+                    <img src="src/homem-de-negocios.png" alt="Imagem pensando">
+                    <h1> Coach Executivo</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor felis id arcu tincidunt,
+                        lobortis.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor felis id arcu tincidunt,
+                        lobortis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor felis id arcu
+                        tincidunt, lobortis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor felis
+                        id arcu tincidunt, lobortis.
+                    </p>
+                </div>
+            </div>
+            <div class="swiper-button-next-srv"><img src="src/divisa-direita.png" alt="Icone de paginação direita"></div>
+            <div class="swiper-button-prev-srv"><img src="src/divisa-direita.png" alt="Icone de paginação esquerda"></div>
+        </div>
 
     </div>
 
+    <div class="fourth_container">
+
+        <div class="responsive-container-block bg">
+            <p class="text-blk title">
+              Depoimentos
+            </p>
+            <div class="btn">
+              <div class="container-block swiper-button-prevs">
+                <img class="image-block pagination-button" src="src/divisa-direita (roxo).png">
+              </div>
+              <div class="container-block swiper-button-nexts">
+                <img class="image-block pagination-button" src="src/divisa-direita (roxo).png">
+              </div>
+            </div>
+            <div class="swiper-container mySwiperTestimonial">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="responsive-container-block content">
+                    <p class="text-blk quotes">
+                      “
+                    </p>
+                    <img class="profile-img" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/eourInstructors3.svg">
+                    <p class="text-blk info">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus elementum magna ut duis pulvinar tincidunt vivamus adipiscing quam. Eget dui quis etiam sed eget sed est.
+                    </p>
+                    <img class="image-block review" src="src/5star.png">
+                    <p class="text-blk name">
+                      Jane Doe
+                    </p>
+                    <p class="text-blk desig">
+                      CEO
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="responsive-container-block content">
+                    <p class="text-blk quotes">
+                      “
+                    </p>
+                    <img class="profile-img image-block" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/eourInstructors3.svg">
+                    <p class="text-blk info">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus elementum magna ut duis pulvinar tincidunt vivamus adipiscing quam. Eget dui quis etiam sed eget sed est.
+                    </p>
+                    <img class="image-block review" src="src/5star.png">
+                    <p class="text-blk name">
+                      Jane Doe
+                    </p>
+                    <p class="text-blk desig">
+                      CEO
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="responsive-container-block content">
+                    <p class="text-blk quotes">
+                      “
+                    </p>
+                    <img class="profile-img" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/eourInstructors3.svg">
+                    <p class="text-blk info">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus elementum magna ut duis pulvinar tincidunt vivamus adipiscing quam. Eget dui quis etiam sed eget sed est.
+                    </p>
+                    <img class="image-block review" src="src/5star.png">
+                    <p class="text-blk name">
+                      Jane Doe
+                    </p>
+                    <p class="text-blk desig">
+                      CEO
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="responsive-container-block content">
+                      <p class="text-blk quotes">
+                        “
+                      </p>
+                      <img class="profile-img" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/eourInstructors3.svg">
+                      <p class="text-blk info">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus elementum magna ut duis pulvinar tincidunt vivamus adipiscing quam. Eget dui quis etiam sed eget sed est.
+                      </p>
+                      <img class="image-block review" src="src/5star.png">
+                      <p class="text-blk name">
+                        Jane Doe
+                      </p>
+                      <p class="text-blk desig">
+                        CEO
+                      </p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="responsive-container-block content">
+                      <p class="text-blk quotes">
+                        “
+                      </p>
+                      <img class="profile-img" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/eourInstructors3.svg">
+                      <p class="text-blk info">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus elementum magna ut duis pulvinar tincidunt vivamus adipiscing quam. Eget dui quis etiam sed eget sed est.
+                      </p>
+                      <img class="image-block review" src="src/5star.png">
+                      <p class="text-blk name">
+                        Jane Doe
+                      </p>
+                      <p class="text-blk desig">
+                        CEO
+                      </p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="responsive-container-block content">
+                      <p class="text-blk quotes">
+                        “
+                      </p>
+                      <img class="profile-img" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/eourInstructors3.svg">
+                      <p class="text-blk info">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus elementum magna ut duis pulvinar tincidunt vivamus adipiscing quam. Eget dui quis etiam sed eget sed est.
+                      </p>
+                      <img class="image-block review" src="src/5star.png">
+                      <p class="text-blk name">
+                        Jane Doe
+                      </p>
+                      <p class="text-blk desig">
+                        CEO
+                      </p>
+                    </div>
+                  </div>
+              </div>
+              <div class="swiper-pagination container-block">
+              </div>
+          </div>
+
+    </div>
 </body>
+
+
 
 </html>

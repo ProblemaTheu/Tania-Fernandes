@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const images = document.querySelectorAll(".image-slider img");
+    const images = document.querySelectorAll(".image_slider img");
     let currentImage = 0;
 
     function changeImage() {
