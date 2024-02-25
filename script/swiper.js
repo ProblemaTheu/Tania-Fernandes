@@ -11,6 +11,26 @@ var swiper = new Swiper(".mySwiperSrv", {
     nextEl: ".swiper-button-next-srv",
     prevEl: ".swiper-button-prev-srv",
   },
+  breakpoints: {
+
+    300: {
+      slidesPerView: 1,
+      autoplay: false,
+    },
+
+    501: {
+      slidesPerView: 1,
+      autoplay: false
+    },
+
+    769: {
+      slidesPerView: 2,
+    },
+
+    1025: {
+      slidesPerView: 2,
+    },
+  }
 });
 
 var swiperTestimonial = new Swiper(".mySwiperTestimonial", {
