@@ -25,6 +25,21 @@
   suffix: ""
 }
 
+@font-face {
+  font-family: Groteska;
+  src: url(Groteska-Regular.ttf);
+}
+
+@font-face {
+  font-family: Mirage-R;
+  src: url(MADE\ Mirage\ Regular\ PERSONAL\ USE.otf);
+}
+
+@font-face {
+  font-family: Mirage-M;
+  src: url(MADE\ Mirage\ Medium\ PERSONAL\ USE.otf);
+}
+
 :root {
   --linkedin: #0e76a8;
   --white-gold: #c8996d;
@@ -44,7 +59,7 @@ body {
   padding: 0;
   height: 100%;
   background-color: var(--white);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Groteska;
 }
 
 .wpp_button {
@@ -103,7 +118,7 @@ body {
 /*---------------------------------------------------------------------------------COVER---------------------------------------------------------------------------------*/
 
 .cover {
-  height: 95vh;
+  height: 900px;
   display: flex;
   flex-direction: column;
   background-color: var(--dirt-white);
@@ -160,7 +175,7 @@ body {
 /*---------------------------------------------------------------------------------1st CONTAINER---------------------------------------------------------------------------------*/
 
 .first_container {
-  height: 100vh;
+  height: 1000px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -169,8 +184,8 @@ body {
 }
 
 .first_container section{
-  width: 400px;
-  height: 600px;
+  width: 450px;
+  height: 650px;
   background-color: var(--white);
   display: flex;
   justify-content: center;
@@ -179,8 +194,8 @@ body {
 }
 
 .first_container div {
-  width: 350px;
-  height: 550px;
+  width: 400px;
+  height: 600px;
   align-items: center;
   text-align: center;
   display: flex;
@@ -194,6 +209,7 @@ body {
   align-items: center;
   justify-content: center;
   width: 300px;
+  font-family: Mirage-M;
   font-size: 32px;
   height: 74px;
 }
@@ -231,7 +247,7 @@ body {
 
 .second_container {
   display: flex;
-  height: 100vh;
+  height: 1000px;
   justify-content: center;
   gap: 30px;
   align-items: center;
@@ -257,11 +273,13 @@ body {
   justify-content: center;
   text-align: center;
   align-items: center;
+  font-family: Mirage-M;
 }
 
 .second_container h1{
   margin: 0;
   font-size: 38px;
+  font-family: Mirage-M;
 }
 
 .over_title{
@@ -326,7 +344,7 @@ body {
 /*---------------------------------------------------------------------------------3rd CONTAINER---------------------------------------------------------------------------------*/
 
 .third_container {
-  height: 100vh;
+  height: 1000px;
   background: var(--background-gradiente);
   display: flex;
   align-items: center;
@@ -338,6 +356,7 @@ body {
   margin: 0;
   font-size: 18px;
   color: var(--white);
+  font-family: Mirage-M;
 }
 
 .scrollside_msg {
@@ -373,6 +392,7 @@ body {
 .text-blk.title.srv {
   margin: 0;
   color: var(--white);
+  font-family: Mirage-M;
 }
 
 .swiper.srv {
@@ -392,19 +412,23 @@ body {
 }
 
 .swiper-slide.srv {
-  border: solid var(--black);
+  border: 2px solid var(--black);
   background-color: var(--white);
   max-width: 500px;
-  height: 300px;
+  height: 320px;
   text-align: center;
-  font-size: 18px;
+  font-size: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  box-shadow: 10px 2px var(--black);
-  border-radius: 60px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border-radius: 20px;
   opacity: 1;
+}
+
+.swiper-slide.srv h1{
+  font-family: Mirage-M;
 }
 
 .swiper-slide.srv img {
@@ -417,6 +441,7 @@ body {
 
 .swiper-slide.srv p {
   padding: 0 50px;
+  text-align: justify;
 }
 
 .swiper-button-next-srv,
@@ -457,11 +482,47 @@ body {
   transform: rotate(180deg)
 }
 
+/*---------------------------------------------------------------------------------Quote Container---------------------------------------------------------------------------------*/
+
+.quote_container {
+  height: 300px;
+  background-color: var(--dirt-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.quote_container p{
+  margin: 0;
+  max-width: 600px;
+  font-style: italic;
+  font-size: 20px;
+}
+
+.quote_container div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.quote_container div img{
+  width: 50px;
+  border-radius: 50%;
+  
+}
+
+.quote_container div h1{
+  font-family: Mirage-M;
+  font-size: 24px;
+}
+
 /*---------------------------------------------------------------------------------4th CONTAINER---------------------------------------------------------------------------------*/
 
 .fourth_container {
   height: 1000px;
-  /* background-color: var(--wine); */
 }
 
 .btn {
@@ -516,7 +577,9 @@ body {
   font-size: 46px;
   line-height: 64px;
   font-weight: 900;
+  font-family: Mirage-M;
   margin: 0px;
+  color: var(--background-gradiente);
 }
 
 .container-block {
@@ -596,6 +659,7 @@ body {
 .text-blk.name {
   font-size: 24px;
   line-height: 32px;
+  font-family: Mirage-M;
   font-weight: 900;
   padding-top: 10px;
   padding-right: 10px;
@@ -620,6 +684,7 @@ body {
   margin-left: 0px;
   font-size: 20px;
   line-height: 30px;
+  text-align: justify;
 }
 
 .text-blk.quotes {
@@ -685,12 +750,6 @@ body {
   margin-right: 20px;
   margin-bottom: 120px;
   margin-left: 20px;
-}
-
-/*---------------------------------------------------------------------------------4th CONTAINER---------------------------------------------------------------------------------*/
-
-.texto {
-  height: 300px;
 }
 
 /*---------------------------------------------------------------------------------SCROLLBAR---------------------------------------------------------------------------------*/
@@ -902,6 +961,7 @@ body {
 
   .swiper-slide.srv h1 {
     font-size: 16px;
+    font-family: Mirage-M;
   }
 
   .swiper-slide.srv img {

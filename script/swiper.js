@@ -80,8 +80,7 @@ var swiperTestimonial = new Swiper(".mySwiperTestimonial", {
   },
   autoplay: {
     delay: 3500,
-    disableOnInteraction: false, 
-    reverseDirection: true,
+    disableOnInteraction: false
   },
   navigation: {
     nextEl: ".swiper-button-nexts",
