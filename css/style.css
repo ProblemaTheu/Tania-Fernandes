@@ -793,7 +793,7 @@ body {
 .thumb {
   position: absolute;
   top: 0;
-  left: -12px;
+  left: -15px;
   width: 100%;
   cursor: pointer;
   align-items: center;
@@ -1014,7 +1014,7 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .footer div{
