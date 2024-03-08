@@ -225,6 +225,7 @@ body {
   background-color: var(--dirt-white);
   box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 1.65px;
   border-radius: 20px;
+  margin: 25px
 }
 
 .first_container h1 {
@@ -839,7 +840,6 @@ body {
 .add_grayscale_filter{
   filter: hue-rotate(90deg);
   background-color: var(--dirt-white-nt);
-  border: 2px solid var(--black);
   z-index: 1;
 }
 
