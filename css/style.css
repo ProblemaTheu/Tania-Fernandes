@@ -839,6 +839,8 @@ body {
 .add_grayscale_filter{
   filter: hue-rotate(90deg);
   background-color: var(--dirt-white-nt);
+  border: 2px solid var(--black);
+  z-index: 1;
 }
 
 /*---------------------------------------------------------------------------------5th CONTAINER---------------------------------------------------------------------------------*/
