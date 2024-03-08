@@ -49,6 +49,7 @@
   --black: #000000;
   --white: #ffffff;
   --dirt-white: #e0e1e257;
+  --dirt-white-nt: #e0e1e2;
   --background-gradiente: linear-gradient(90deg, rgba(176, 84, 69, 1) 0%, rgba(77, 20, 47, 1) 100%);
   --black-opac: rgba(0,0,0,0.7);
 }
@@ -211,6 +212,7 @@ body {
   justify-content: center;
   align-items: center;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border-radius: 25px;
 }
 
 .first_container div {
@@ -222,6 +224,7 @@ body {
   flex-direction: column;
   background-color: var(--dirt-white);
   box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 1.65px;
+  border-radius: 20px;
 }
 
 .first_container h1 {
@@ -267,7 +270,7 @@ body {
 
 .second_container {
   display: flex;
-  height: 1000px;
+  height: 900px;
   justify-content: center;
   gap: 30px;
   align-items: center;
@@ -319,17 +322,6 @@ body {
   box-shadow: 20px -20px 0px 0px var(--black);
 }
 
-.second_container a {
-  filter:grayscale(100%);
-  width: 32px;
-  height: 32px;
-}
-
-.second_container a:hover {
-  filter:grayscale(0%);
-  transition: 0.5s;
-}
-
 .second_container div a img {
   height: 100%;
   border: none;
@@ -360,6 +352,38 @@ body {
   opacity: 1;
 }
 
+/*---------------------------------------------------------------------------------LINKEDIN BUTTON---------------------------------------------------------------------------------*/
+
+.linkedin_button{
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  font-family: Mirage-M;
+  gap: 30px;
+}
+
+.linkedin_button a{
+  filter:grayscale(100%);
+  width: 32px;
+  height: 32px;
+}
+
+.linkedin_button a:hover{
+  filter:grayscale(0%);
+  transition: 0.5s;
+}
+
+.linkedin_button h2{
+  margin: 0;
+}
+
+.linkedin_button img{
+  height: 100%;
+  border: none;
+  box-shadow: none;
+}
 
 /*---------------------------------------------------------------------------------3rd CONTAINER---------------------------------------------------------------------------------*/
 
@@ -413,6 +437,7 @@ body {
   margin: 0;
   color: var(--white);
   font-family: Mirage-M;
+  margin-top: 40px;
 }
 
 .swiper.srv {
@@ -445,6 +470,11 @@ body {
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   border-radius: 20px;
   opacity: 1;
+  transition: 0.3s;
+}
+
+.swiper-slide.swiper-slide-active{
+  height: 340px;
 }
 
 .swiper-slide.srv h1{
@@ -808,7 +838,7 @@ body {
 
 .add_grayscale_filter{
   filter: hue-rotate(90deg);
-  background-color: var(--dirt-white);
+  background-color: var(--dirt-white-nt);
 }
 
 /*---------------------------------------------------------------------------------5th CONTAINER---------------------------------------------------------------------------------*/
@@ -830,6 +860,7 @@ body {
     box-shadow: rgba(0, 0, 0, 0.15) 5.95px 5.95px 7.6px;
     align-items: center;
     justify-content: center;
+    border-radius: 30px;
 }
 
 .contact_box form{
