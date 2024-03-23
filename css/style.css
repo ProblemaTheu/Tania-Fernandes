@@ -72,7 +72,8 @@ body {
   position: fixed;
   bottom: 10px;
   right: 10px;
-  transform: 5s;
+  filter: hue-rotate(90deg);
+  background-color: var(--dirt-white);
 }
 
 /* .wpp_button:hover + .wpp_msg{
@@ -116,7 +117,7 @@ body {
   padding: 10px 0px;
   display: flex;
   justify-content: end;
-  background-color: var(--dirt-white);
+  background: var(--background-gradiente);
 }
 
 .header img {
@@ -134,6 +135,88 @@ body {
 
 .header div img {
   width: 24px;
+}
+
+/*---------------------------------------------------------------------------------COVER TESTE---------------------------------------------------------------------------------*/
+
+.cover_teste{
+  height: 900px;
+  background: var(--background-gradiente);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cover_teste div{
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  width: 600px;
+}
+
+.cover_teste h1{
+  margin: 0;
+  padding: 0;
+  font-size: 48px;
+  font-family: Mirage-M;
+}
+
+.cover_teste h2{
+  position: absolute;
+  z-index: 1;
+  transform: translate(23%, -350px);
+  font-family: Mirage-M;
+  margin: 0;
+  line-height: 1.2;
+  font-size: 40px;
+  color: var(--white);
+}
+
+.cover_teste h3{
+  position: absolute;
+  z-index: 1;
+  transform: translate(137%, 350px);
+  font-family: Mirage-M;
+  margin: 0;
+  line-height: 1.2;
+  font-size: 30px;
+  color: var(--white);
+}
+
+.cover_teste p{
+  font-size: 20px;
+}
+
+.cover_teste div a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white);
+  width: 400px;
+  height: 40px;
+  text-decoration: none;
+  color: var(--black);
+  border-radius: 10px;
+  box-shadow: 10px 15px 25px 0 rgba(0,0,0,.2);;
+}
+
+.cover_teste div a:hover{
+  box-shadow: 1px 1px 10px 0 rgba(0,0,0,.1);
+}
+
+.cover_teste img{
+  height: 700px;
+  align-items: flex-end;
+  object-fit: cover;
+  /* filter: grayscale(80%) contrast(100%); */
+  box-shadow: 10px 15px 25px 0 rgba(0,0,0,.2);
+  display: block;
+  transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border-radius: 20px;
+}
+
+.cover_teste_img:hover{
+  box-shadow: 1px 1px 10px 0 rgba(0,0,0,.1);
 }
 
 /*---------------------------------------------------------------------------------COVER---------------------------------------------------------------------------------*/
@@ -206,7 +289,7 @@ body {
 
 .first_container section{
   width: 450px;
-  height: 650px;
+  height: 750px;
   background-color: var(--white);
   display: flex;
   justify-content: center;
@@ -217,7 +300,7 @@ body {
 
 .first_container div {
   width: 400px;
-  height: 600px;
+  height: 700px;
   align-items: center;
   text-align: center;
   display: flex;
@@ -265,6 +348,39 @@ body {
 
 .first_container a img {
   width: 24px;
+}
+
+/*---------------------------------------------------------------------------------Paragraph CONTAINER---------------------------------------------------------------------------------*/
+
+.p_cont{
+  display: flex;
+  height: 170px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.p_cont p{
+  font-size: 22px;
+}
+
+.p_cont a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: var(--white);
+  border-radius: 10px;
+  width: 300px;
+  height: 40px;
+  background: var(--background-gradiente);
+  box-shadow: 2px 2px 4px 0 var(--black);
+  transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.p_cont a:hover{
+  box-shadow: 1px 1px 3px 0 var(--black);
 }
 
 /*---------------------------------------------------------------------------------2nd CONTAINER---------------------------------------------------------------------------------*/
@@ -561,6 +677,7 @@ body {
 
 .quote_container div img{
   width: 50px;
+  height: 50px;
   border-radius: 50%;
   
 }
@@ -811,7 +928,7 @@ body {
   left: 15px;
   width: 5px;
   height: 80vh;
-  background-color: var(--dark-gold);
+  background-color: var(--white);
   border-radius: 10px;
 }
 

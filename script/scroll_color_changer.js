@@ -1,7 +1,7 @@
 let hasScrolled = false;
 
 window.addEventListener('scroll', function() {
-    const element_wpp = document.querySelector('.wpp_button');
+    /* const element_wpp = document.querySelector('.wpp_button'); */
     const element_sb = document.querySelector('.scrollbar');
 
     if (window.scrollY >= 100) {
